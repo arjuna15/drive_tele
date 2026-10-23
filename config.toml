@@ -1,0 +1,19 @@
+[server]
+port = 8080
+
+[db]
+data-source = "postgresql://neondb_owner:npg_EmBGcO5z1pfj@ep-twilight-frost-ao2uv6t8.c-2.ap-southeast-1.aws.neon.tech/neondb?sslmode=require"
+pool = { max-open-conns = 25, max-idle-conns = 25, conn-max-lifetime = "10m" }
+
+[jwt]
+allowed-users = ["nancox"]
+secret = "ea74efc03ad99bbb7f2e6fe9133e055b9f804afb4455c85a4dfb1cd6eb3af715"
+session-duration = "720h"
+
+[tg]
+app-id = 34118565
+app-hash = "c5f04ae8a57779db21ad6cc9df9614f9"
+
+[tg.uploads]
+encryption-key = "8578f7f54cdea4061dca853b98f732f4913e4a7e0b370b685c52893769471ba8"
+threads = 8
